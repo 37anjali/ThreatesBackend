@@ -152,7 +152,7 @@ async function sendResetEmail(email,token) {
         from:'anjali.anchaurasiya210@gmail.com',
         to:email,
         subject:'password reset request',
-        text:`hello please click on the link below to choose a new password:,\n http://localhost:8080/users/reset-password/${token}`
+        text:`hello please click on the link below to choose a new password:,\n https://threatesbackend.onrender.com/users/reset-password/${token}`
       }
       transporter.sendMail(mailOption,(error,info)=>{
         if(error){
